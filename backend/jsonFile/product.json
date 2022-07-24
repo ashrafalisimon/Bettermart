@@ -1,0 +1,13 @@
+{
+    "name":"Test",
+    "description": "It for testing purpose",
+    "price":100,
+    "stock":10,
+    "category":"Personal",
+    "images":[
+        {
+            "public_id": "testing.com",
+            "url": "www.testing.com"
+        }
+    ]
+}
