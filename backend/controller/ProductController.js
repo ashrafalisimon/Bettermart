@@ -42,3 +42,36 @@ exports.updateProduct = async(req,res)=>{
 
 }
 
+// delete product
+exports.deleteProduct = async(req,res)=>{
+    const product  = await Product.findById(req.params.id);
+
+    if(!product){
+        return res.status(500).json({
+            success: false,
+            message: 'Product is not found with this id'
+        })
+    }
+    await product.remove();
+    res.status(200).json({
+        success: true,
+        message: 'Product deleted successfully'
+    })
+}
+
+// get single product details
+exports.getSingleProduct = async(req,res)=>{
+    const product  = await Product.findById(req.params.id);
+
+    if(!product){
+        return res.status(500).json({
+            success: false,
+            message: 'Product is not found with this id'
+        })
+    }
+    res.status(200).json({
+        success: true,
+        product
+    })
+}
+
