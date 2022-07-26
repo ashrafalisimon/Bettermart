@@ -1,0 +1,27 @@
+{
+    "itemsPrice": 100,
+    "taxPrice":10,
+    "shippingPrice": 15,
+    "totalPrices":125,
+    "orderItems":[
+        {
+            "productId": "62dd835cc75d7fa13206b1f0",
+            "productName":"Apple",
+            "productPrice":100,
+            "productImage":"test.com",
+            "quantity":1
+        }
+    ],
+    "shippingInfo":{
+        "address": "33334 ctg, bd",
+        "city": "chattogram",
+        "state": "ca",
+        "country": "BD",
+        "pinCode": "90505",
+        "phoneNo": 5701241124
+    },
+    "paymentInfo":{
+        "id": "542623343019903",
+        "status": "succeeded"
+    }
+}
